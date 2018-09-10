@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="algorithm.css">
+        <link rel="stylesheet" href="data_structures.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Varela+Round" rel="stylesheet">
         <link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -50,15 +50,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="homepageLogo1.png"></a>
-                    <a class="navbar-brand-mobile" href="index.html"><img src="homepageLogo1.png"></a>
+                    <a class="navbar-brand" href="index.jsp"><img src="homepageLogo1.png"></a>
+                    <a class="navbar-brand-mobile" href="index.jsp"><img src="homepageLogo1.png"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <!--<li class="active"><a href="#">Home</a></li>-->
                         <li><a href="howtostart.jsp">How To Start</a></li>
-						<li class="active"><a href="algorithm.jsp">Algorithms</a></li>
-						<li><a href="data_structures.jsp">Data Structures</a></li>
+						<li><a href="algorithm.jsp">Algorithms</a></li>
+						<li class="active"><a href="data_structures.jsp">Data Structures</a></li>
 						<li><a href="problems.jsp">MCQs</a></li>
 						<li><a href="forum.jsp">Forum</a></li>
 					
@@ -81,75 +81,59 @@
                 </div>
             </div>
         </nav>
-        <!-- Algorithms -->
-        <div class="algorithm">
+        <!-- Data Structures -->
+        <div class="ds">
             <div class="header">
-                <h2>Algorithms</h2>
+                <h2>Data Structures</h2>
             </div>
-            <hr class="sub-hr"> 
+            <hr class="sub-hr">
             <div class="grid">
                 <div class="grid-column col-sm-3">
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_searching">
+                    <a href="#" data-toggle="modal" data-target="#ds_modal_arrays">
                         <div class="grid-element">
-                            <img src="theory_icons/algo_search.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Searching</h3>
+                            <img src="theory_icons/ds_array.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Arrays</h3>
                         </div>
                     </a>
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_sorting">
+                    <a href="#" data-toggle="modal" data-target="#ds_modal_ll">
                         <div class="grid-element">
-                            <img src="theory_icons/algo_sort.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Sorting</h3>
-                        </div>
-                    </a>
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_strings">
-                        <div class="grid-element">
-                            <img src="theory_icons/algo_string.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Strings</h3>
+                            <img src="theory_icons/ds_ll.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Linked Lists</h3>
                         </div>
                     </a>
                 </div>
                 <div class="grid-column col-sm-3">
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_greedy">
+                    <a href="#" data-toggle="modal" data-target="#ds_modal_stack">
                         <div class="grid-element">
-                            <img src="theory_icons/algo_greedy.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Greedy</h3>
+                            <img src="theory_icons/ds_stack.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Stack</h3>
                         </div>
                     </a>
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_graph">
+                    <a href="#" data-toggle="modal" data-target="#ds_modal_queue">
                         <div class="grid-element">
-                            <img src="theory_icons/algo_graph.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Graph Theory</h3>
+                            <img src="theory_icons/ds_queue.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Queue</h3>
                         </div>
                     </a>
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_dp">
-                        <div class="grid-element">
-                            <img src="theory_icons/algo_dp.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">DP</h3>
-                        </div>
-                    </a>
-                </div>
+                </div>  
                 <div class="grid-column col-sm-3">
+                    <a href="#" data-toggle="modal" data-target="#ds_modal_trees">
+                        <div class="grid-element">
+                            <img src="theory_icons/ds_trees.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Trees</h3>
+                        </div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#ds_modal_graphs">
+                        <div class="grid-element">
+                            <img src="theory_icons/ds_graphs.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Graphs</h3>
+                        </div>
+                    </a>
                     <!--<center><hr class="element-hr"></center>-->
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_constructive">
-                        <div class="grid-element">
-                            <img src="theory_icons/algo_constructive.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Constructive</h3>
-                        </div>
-                    </a>
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_bm">
-                        <div class="grid-element">
-                            <img src="theory_icons/algo_bits.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; padding-left: 10px; margin-top: 15px;">Bit<br>Manipulation</h3>
-                        </div>
-                    </a>
-                    <a href="#" data-toggle="modal" data-target="#algo_modal_recursion">
-                        <div class="grid-element">
-                            <img src="theory_icons/algo_recursive.png" style="border-radius: 25px; float:left; margin-left: 5%; margin-top:14px;"><h3 style="vertical-align: middle; float:left; margin-top: 25px; padding-left: 10px;">Recursion</h3>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
-       
         <!--Footer-->
         <div class="jumbotron footer row">
         	<div class = "col-sm-4"></div>
         	<div class="row footercopyright"><center><span class="col-sm-4">&copy; 2017 Algranth, All Rights Reserved.</span></center></div>
         	<div class = "col-sm-4"></div>
         	<span class="col-sm-6 footer-span">
-        	<a href="index.html" class = "footer-text">Home</a>
+        	<a href="index.jsp" class = "footer-text">Home</a>
         	<span> | </span>
         	<a href=# class = "footer-text">Contact Us</a>
         	<span> | </span>
