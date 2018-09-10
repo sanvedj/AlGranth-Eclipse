@@ -72,17 +72,19 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img
+				<a class="navbar-brand" href="index.jsp"><img
 					src="homepageLogo1.png"></a> <a class="navbar-brand-mobile"
-					href="index.html"><img src="homepageLogo1.png"></a>
+					href="index.jsp"><img src="homepageLogo1.png"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<!--<li class="active"><a href="#">Home</a></li>-->
-					<li><a href="howtostart.html">How To Start</a></li>
-					<li><a href="test_theory.html">Theory</a></li>
-					<li><a href="problems.html">Problems</a></li>
-					<li><a href="forum.html">Forum</a></li>
+					<li><a href="howtostart.jsp">How To Start</a></li>
+					<li><a href="algorithm.jsp">Algorithms</a></li>
+					<li><a href="data_structures.jsp">Data Structures</a></li>
+					<li><a href="problems.jsp">MCQs</a></li>
+					<li><a href="forum.jsp">Forum</a></li>
+					
 				</ul>
 				<ul class="nav navbar-nav navbar-right ">
 					<li><a href="#" data-toggle="modal" data-target="#myModal"><span
@@ -387,7 +389,7 @@
 				<h4 class="footerheadpad">Algranth</h4>
 				<ul class="ulfooter">
 					<li><a href=#>Home</a></li>
-					<li><a href="karma.html">Earn Karma</a></li>
+					<li><a href="karma.jsp">Earn Karma</a></li>
 					<li><a href=#>Contribute</a></li>
 				</ul>
 			</div>
@@ -401,7 +403,7 @@
 			<div class="col-sm-2">
 				<h4 class="footerheadpad">Help</h4>
 				<ul class="ulfooter">
-					<li><a href="getStarted.html">Get Started</a></li>
+					<li><a href="getStarted.jsp">Get Started</a></li>
 					<li><a href=#>Contact Us</a></li>
 				</ul>
 			</div>
@@ -422,8 +424,7 @@
 			</div>
 			<div class="row footercopyright">
 				<center>
-					<span class="col-sm-6">&copy; 2017 Algranth, All Rights
-						Reserved.</span>
+					<span class="col-sm-6">&copy; 2018 Best Mini Project of IT, All Rights Reserved.</span>
 				</center>
 			</div>
 		</div>

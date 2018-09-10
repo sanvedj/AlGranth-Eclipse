@@ -19,6 +19,7 @@
 
 Class.forName("com.mysql.jdbc.Driver").newInstance();
 
+<<<<<<< HEAD
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/users","root","password");
 
 Statement st=con.createStatement();
@@ -50,6 +51,39 @@ while(rs.next())
 <td><%=rs.getString("ID") %></td>
 
 <td><%=rs.getString("password") %></td>
+=======
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/algranth","root","password");
+
+Statement st=con.createStatement();
+
+String query="select * from user_details";
+
+ResultSet rs=st.executeQuery(query);
+
+
+while(rs.next())
+
+{
+
+%>
+
+<table border="2" bordercolor="#2494b7">
+
+<tr>
+
+<th>UserName</th>
+
+<th>Password</th>
+
+
+</tr>
+
+<tr>
+
+<td><%=rs.getString("email_id") %></td>
+
+<td><%=rs.getString("pwd") %></td>
+>>>>>>> branch 'master' of https://github.com/sanvedj/AlGranth-Eclipse
 
 
 
