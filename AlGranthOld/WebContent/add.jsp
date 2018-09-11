@@ -21,20 +21,12 @@
 
 		Class.forName("com.mysql.jdbc.Driver");
 
-<<<<<<< HEAD
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "password");
-
-		Statement st = con.createStatement();
-
-		int i=st.executeUpdate("insert into userpass(id,email,password)values('"+name+"','"+email+"','"+pwd+"')");
-=======
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/algranth", "root", "password");
 
 		Statement st = con.createStatement();
 
-		int i=st.executeUpdate("insert into user_details(username,email_id,pwd)values('"+name+"','"+email+"','"+pwd+"')");
->>>>>>> branch 'master' of https://github.com/sanvedj/AlGranth-Eclipse
-
+		int i = st.executeUpdate("insert into user_details(username,email_id,pwd)values('" + name + "','" + email
+				+ "','" + pwd + "')");
 	%>
 </body>
 </html>
